@@ -79,7 +79,7 @@ const Home = () => {
   const getPosts = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:8080/api/post");
+      const res = await fetch("https://image-gen-wcfq.onrender.com/api/generateImage");
       const data = await res.json();
       if (data?.data) {
         // Reverse so the newly posted image is shown first

@@ -140,7 +140,7 @@ const GenerateImageForm = ({
 
     setGenerateImageLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/api/generateImage", {
+      const response = await fetch("https://image-gen-wcfq.onrender.com/api/generateImage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: post.prompt }),
@@ -175,7 +175,7 @@ const GenerateImageForm = ({
 
     setCreatePostLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/api/post", {
+      const response = await fetch("https://image-gen-wcfq.onrender.com/api/post", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
